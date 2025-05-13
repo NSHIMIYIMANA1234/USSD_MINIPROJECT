@@ -1,13 +1,13 @@
-# MOBI Library USSD System
+# USSD Library System
+
+## Project Overview
+This project is a USSD-based library management system designed to provide easy access to library services via mobile phones.
 
 ## Group Members
-- [NSHIMIYIMANA JMV] [Group Member 15] - [22RP01712]
--UWASE Claudine [Group Member 15] - [22RP02496]
-
-A USSD-based library management system that allows users to register, search for books, and borrow books through their mobile phones.
+- NSHIMIYIMANA JMV [Group Member 15] - 22RP01712
+- UWASE Claudine [Group Member 15] - 22RP02496
 
 ## Features
-
 - User Registration and Authentication
 - Book Search by Category
 - Book Borrowing System
@@ -15,8 +15,53 @@ A USSD-based library management system that allows users to register, search for
 - Transaction Logging
 - Book Availability Tracking
 
-## Requirements
+## USSD Flow Diagram
+```
+Start
+ │
+ │
+ ├── Is phone number registered?
+ │         │
+ │         ├── Yes
+ │         │     │
+ │         │     ▼
+ │         │   Welcome Back Menu
+ │         │   1. View my borrowed books
+ │         │   2. Search book
+ │         │   3. Borrow book
+ │         │   4. Exit
+ │         │
+ │         │   ├── 1: Show list of borrowed books (or "No book borrowed")
+ │         │   ├── 2: Enter book category → Show results
+ │         │   └── 3: Enter book name → If available, borrow; else, show not found
+ │         │
+ │         └── No
+ │               │
+ │               ▼
+ │           Welcome to MOB Library
+ │           1. Register
+ │               │
+ │               ▼
+ │           Enter full name
+ │               │
+ │               ▼
+ │           Enter phone number
+ │               │
+ │               ├── If phone number already registered: "Enter another phone number"
+ │               └── If not registered:
+ │                     │
+ │                     ▼
+ │                 Enter password
+ │                     │
+ │                     ▼
+ │                 Re-enter password
+ │                     │
+ │                     ▼
+ │                 "You have successfully registered with [phone number]" with message
+ │
+End
 
+## Requirements
 - PHP 7.4 or higher
 - MySQL/MariaDB
 - XAMPP or similar local server
@@ -27,8 +72,8 @@ A USSD-based library management system that allows users to register, search for
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/ussd_libryarysystem.git
-cd ussd_libryarysystem
+git clone https://github.com/NSHIMIYIMANA1234/USSD_MINIPROJECT.git
+cd USSD_MINIPROJECT
 ```
 
 2. Install dependencies:
@@ -38,7 +83,7 @@ composer install
 
 3. Create a database and import the schema:
 ```bash
-mysql -u your_username -p your_database < database.sql
+mysql -u your_username -p your_database < ussd_library_system.sql
 ```
 
 4. Configure your environment:
@@ -94,4 +139,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## Support
 
-For support, please contact [your-email@example.com] 
+For support, please contact [your-email@example.com]
+
+
