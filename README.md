@@ -7,14 +7,6 @@ This project is a USSD-based library management system designed to provide easy 
 - NSHIMIYIMANA JMV [Group Member 15] - 22RP01712
 - UWASE Claudine [Group Member 15] - 22RP02496
 
-## Features
-- User Registration and Authentication
-- Book Search by Category
-- Book Borrowing System
-- SMS Notifications
-- Transaction Logging
-- Book Availability Tracking
-
 ## USSD Flow Diagram
 ```
 Start
