@@ -1,4 +1,38 @@
-# USSD Flow Diagram
+# USSD Library System
+
+## Developers
+- NSHIMIYIMANA JMV [22RP01712]
+- UWASE Claudine [22RP02496]
+
+## Project Setup Instructions
+
+1. Clone the repository:
+```bash
+git clone https://github.com/NSHIMIYIMANA1234/USSD_MINIPROJECT.git
+cd USSD_MINIPROJECT
+```
+
+2. Install dependencies:
+```bash
+composer install
+```
+
+3. Create a database and import the schema:
+```bash
+mysql -u your_username -p your_database < ussd_library_system.sql
+```
+
+4. Configure your environment:
+- Copy `.env.example` to `.env`
+- Update the database credentials
+- Add your Africa's Talking API credentials
+
+5. Configure your USSD service:
+- Set up your Africa's Talking USSD service
+- Configure the callback URL to point to your server
+- Set up your sender ID for SMS
+
+## USSD Flow Diagram
 
 ```
 Start
