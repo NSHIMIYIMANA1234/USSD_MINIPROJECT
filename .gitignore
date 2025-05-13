@@ -1,0 +1,31 @@
+# Dependencies
+/vendor/
+composer.lock
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+error_log
+
+# Cache files
+*.cache
+*.tmp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# XAMPP specific
+/xampp/
+/xamppfiles/ 
