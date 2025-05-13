@@ -1,5 +1,9 @@
 # MOBI Library USSD System
 
+## Group Members
+- [NSHIMIYIMANA JMV] [Group Member 15] - [22RP01712]
+-UWASE Claudine [Group Member 15] - [22RP02496]
+
 A USSD-based library management system that allows users to register, search for books, and borrow books through their mobile phones.
 
 ## Features
