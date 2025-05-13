@@ -1,14 +1,5 @@
-# USSD Library System
+# USSD Flow Diagram
 
-## Project Overview
-This project is a USSD-based library management system designed to provide easy access to library services via mobile phones.
-
-Group Members
--[NSHIMIYIMANA JMV] [Group Member 15] - [22RP01712]
--UWASE Claudine [Group Member 15] - [22RP02496]
-
-
-## USSD Flow Diagram
 ```
 Start
  │
@@ -53,6 +44,4 @@ Start
  │                 "You have successfully registered with [phone number]" with message
  │
 End
-
-
-
+``` 
